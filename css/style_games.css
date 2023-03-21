@@ -1,0 +1,22 @@
+.game {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+/* div p:nth-child(even),
+div img:nth-child(odd) {
+  grid-column: 1/2;
+}
+
+div p:nth-child(odd),
+div img:nth-child(even) {
+  grid-column: 2/-1;
+} */
+
+.game>h2 {
+  grid-column: 1/-1;
+}
+
+.game * {
+  grid-column: auto / span 1;
+}

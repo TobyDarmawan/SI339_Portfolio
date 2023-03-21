@@ -2,156 +2,113 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <link rel="shortcut icon" type="image/png" href="images/logo_icon.png" />
-  <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toby's Recommendations</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="images/logo_icon.png" />
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toby's Recommendations</title>
 </head>
 
 <body>
-  <a class="skip" href="#skip">Skip to Main Content</a>
-  <header>
-    <img src="images/logo.png" alt="" id="logo">
-    <nav>
-      <ul class="nav_links">
-        <li class="nav_item"><a href="#skip">PKM</a></li>
-        <li class="nav_item"><a href="#movies_nav">Movies</a></li>
-        <li class="nav_item"><a href="#games_nav">Games</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="pkm" id="skip">
-    <h1>Personal Knowledge Management (PKM)</h1>
+    <a class="skip" href="#skip">Skip to Main Content</a>
+    <header>
+        <img src="images/logo.png" alt="" id="logo">
+        <nav>
+            <ul class="nav_links">
+                <li class="nav_item"><a href="./index.html">PKM</a></li>
+                <li class="nav_item"><a href="./movies.html">Movies</a></li>
+                <li class="nav_item focused_nav"><a href="./games.html">Games</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="pkm" id="skip">
+        <h1>Personal Knowledge Management (PKM)</h1>
 
-    <p>PKMs are a way to manage your personal knowledge. In the digital age, the content we consume becomes overwhelming. Be it movies or video games, I often end up consuming more than I create. To remedy this, I try to create as I consume using a PKM. With every movie I watch, and every game I play, I make sure I note my thoughts on it.
+        <h2>What are PKMs?</h2>
+        <p>PKMs are a way to manage your personal knowledge. In the digital age, the content we consume becomes
+            overwhelming. Be it movies or video games, I often end up consuming more than I create. To remedy this, I
+            try to
+            create as I consume using a PKM. With every movie I watch, and every game I play, I make sure I note my
+            thoughts
+            on it.
+            <br><br>
+            PKMs are useful because they allow your knowledge to compound in value over time. Here's how that works with
+            Obsidian, the tool I use for my PKM. Obsidian is not only a note taking app like Notion, Evernote, etc. This
+            is
+            because it's really just a wrapper for editing markdown files in a folder. There are several advantages to
+            this.
+            Firstly, this makes your notes future-proof and portable to any other system. If you don't find Obsidian to
+            work
+            for you, there's no loss since it's just an editor of your local markdown files. This also means there isn't
+            any
+            proprietary file formats that would make migrating to another note-taking app difficult.
+            <br><br>
+            The key advantage of Obsidian is that it treats each file as a node in a graph. This encourages both an
+            emergent
+            file structure and linking your thoughts.
+        </p>
+        <h2>Emergent file structures</h2>
 
-    PKMs are useful because they allow your knowledge to compount in value over time. Here's how that works with Obsidian, the tool I use for my PKM. Obsidian is not only a note taking app like Notion, Evernote, etc. This is because it's really just a wrapper for editing markdown files in a folder. There are several advantages to this. Firstly, this makes your notes future-proof and portable to any other system. If you don't find Obsidian to work for you, there's no loss since it's just an editor of your local markdown files. This also means there isn't any proprietary file formats that would make migrating to another note-taking app difficult.
+        <p>Traditional note-taking systems which use a top-down approach to note-taking. For example, you'd first create
+            a
+            folder called "Math 101", and you'd put all your math notes in that folder. Obsidian uses a bottom-up
+            approach to
+            organization. While you can still create folders and place notes in them, Obsidian also allows you to make
+            notes
+            on the fly, and organize them later. For example, you can create as many math notes as you want, add a
+            #Math_101
+            tag to it, and all your math notes can be found through this tag.
+            <br><br>
+            This is useful primarily because you often don't know what the note structure looks like in the beginning.
+            The
+            ideal structure of a note system often shows up ony after you write a few notes. This is why an emergent,
+            evolving
+            and bottom-up file structure like Obsidian is useful.
+        </p>
 
-    The key advantage of Obsidian is that it treats each file as a node in a graph. This encourages both an emergent file structure and linking your thoughts.
+        <h2>Linked Thinking</h2>
 
-    Emergent file structures
+        <p>
+            Since Obsidian treats each file as a node, you can treat each note as an entity. This is similar to how the
+            internet is structure. For example, if you were to search for "Los Angeles" in Google, it returns the "Los
+            Angeles" entity, including attributes like the country, the state, etc. The suggested searches might be the
+            country (U.S.) or state (California) that it's in. These are two additional entities that the user can go
+            to. As
+            you zoom out, you can see how the internet is composed of a series of nodes/entities linked to each other.
+            <br><br>
+            Using this approach to note-taking, I might be watching the movie "Delicatessen". I create a new note for
+            this
+            entity, such as my review on it, the plot, etc. However, I might realize that I wanted to take notes about
+            the
+            director, 'Jean Pierre Jeunet". I can not only create another entity for the director, but also link the
+            movie to
+            the director. Over time, I might have multiple movies directed by him, each as a separate note, pointing to
+            him.
+            <br><br>
+            The benefit of linked notes is that you are more likely to rediscover past notes. You might look into one
+            note, and explore a chain of notes that are linked to it. In other words, linking makes your notes more
+            useful
+            because rediscovery of older notes are more likely.
 
-    Traditional note-taking systems which use a top-down approach to note-taking. For example, you'd first create a folder called "Math 101", and you'd put all your math notes in that folder. Obsidian uses a bottom-up approach to organization. While you can still create folders and place notes in them, Obsidian also allows you to make notes on the fly, and organize them later. For example, you can create as many math notes as you want, add a #Math_101 tag to it, and all your math notes can be found through this tag.</p>
+            <br><br>
 
-    This is useful primarily because you often don't know what the note structure looks like in the beginning. The ideal structure of a note system often shows up ony after you write a few notes. This is why an emergent, evolving and bottom-up file structure like Obsidian is useful.
+            Here's an example of what that could look like. In the image below, there is a note for Jean Pierre Jeunet,
+            and
+            it's linked to 3 notes on movies that he directed. all my notes look like in a large graph.
 
-    Linked Thinking
+        </p>
+        <img src="src/local_graph.png">
+        <p>Here's what my global graph looks like, which is essentially every single not I have, and the connections
+            between
+            them.</p>
+        <img src="src/global_graph.png">
+        <p></p>
 
-    Since Obsidian treats each file as a node, you can treat each note as an entity. This is similar to how the internet is structure. For example, if you were to search for "Los Angeles" in Google, it returns the "Los Angeles" entity, including attributes like the country, the state, etc. The suggested searches might be the country (U.S.) or state (California) that it's in. These are two additional entities that the user can go to. As you zoom out, you can see how the internet is composed of a series of nodes/entities linked to each other.
-
-    Using this approach to note-taking, I might be watching the movie "Delicatessen". I create a new note for this entity, such as my review on it, the plot, etc. However, I might realize that I wanted to take notes about the director, 'Jean Pierre Jeunet". I can not only create another entity for the director, but also link the movie to the director. Over time, I might have multiple movies directed by him, each as a separate note, pointing to him.
-
-    The benefit of linked notes is that you are more likely to rediscover past notes. You might look into one note, and explore a chain of notes that are linked to it. In other words, linking makes your notes more useful because rediscovery of older notes are more likely.
-
-    Here's an example of what all my notes look like in a large graph.
-
-    Movies
-
-    Here's a list of my favorite, must-watch movies!
-
-    Paris, Texas
-    Directed by Wim Wenders
-
-    Whenever I get tired of the typical blockbuster movie, I often try to look for movies with a deeper, slower burn. With it's ambient pacing and gentle visuals, Paris, Texas is one of the best movies in this category. It tells a story about a father and son that starts off mysterious, and builds up to a highly engrossing conclusion. The film also looks gorgeous. I liken it to a more elegant version of Euphoria's visuals. Like Euphoria's filmic look and sumptuous lighting, Paris, Texas goes even further with subtler, gentler light sources. If you've ever looked around and appreciated the soft glow from a desk lamp, or the warm, calming kitchen lights at night, Paris, Texas does this in spades.
-
-    Playtime
-    Directed by Jacques Tati
-
-    The easiest way to describe Jacques Tati's later films would be that it's like the predecessor of Wes Anderson. If you've seen Wes Anderson's playful direction, like the one in French Dispatch or The Grande Budapest Hotel, Jacques Tati achieves much of the same in the late 60s. When watching Playtime, you'll wonder how the futuristic setting was built without any VFX. The movie is filled with subtle moments of visual comedy. Each re-watching can reveal a nifty detail you've never seen before. This movie feels like an orderly yet strange fever dream. 
-
-    Nathan For You
-    Directed by Nathan Fielder
-
-    Imagine an incredibly awkward, introverted person. For such a person, navigating the world requires a set of pre-determined rules, and interacting with others requires mapping out the ideal outcome beforehand. I like to think of Nathan Fielder as that kind of person. He treats the world around him as the stage for his own play. Being the real world though, random events occur, and the script buckles under this non-deterministic setting. Despite these challenges, what makes Nathan for You one of the most intelligent TV shows is how Nathan manages to thrive within this chaos. When the reality show doesn't go to plan, he somehow makes these twists and turns make the show better. Think of wholesome plot twists, or unexpectedly happy endings. At the end of the day, watching this show feels like watching a play filled with real people, and real consequences. Yet somehow, you walk away from the play feeling very entertained, amused, and happy. 
-
-    Games
-
-    Dishonored
-    by Arkane Studios
-
-    The things you can do in the real world is virtually infinite. One decision creates a ripple effect, and can shape the future trajectory of your life. This is really difficult to do in a game. A video game is hard-coded; it boils down to lines of code, and having the ever-expanding set of possibilities found in the real world is almost a pipe-dream. A genre that comes close is the immersive sim. One key feature of immersive sims is emergent gameplay, made possible by the very robust system logic implemented by the developers. Emergent gameplay occurs when players perform many simple actions that, when executed together, can lead to uniquely complex outcomes. 
-
-    Many of these outcomes are unique to the player, rarely replicated by others, and many are never anticipated by the developers themselves. In Dishonored, some of the possible moves are to slow down time, throw bottles at enemies, and attaching explosives to surfaces. While these three actions are very simple, the systemic nature of the game allows combining them to create interesting outcomes. A player can throw a bottle to an enemy, stop time just before it hits them, attach the explosive to the bottle, run away, and resume time to eliminate this enemy with the explosive bottle. If you've ever wanted to simulate being a real assassin, using the rules of this game world to your advantage, this game's the one.
-
-
-    Elden Ring
-    by FromSoftware
-
-    When you come across a beautiful piece of media, it can often feel too good to be true. When I watched Everything Everywhere All at Once, I never wanted to end. Unfortunately, everything comes to an end. Then I played Elden Ring. I marvelled at the beauty of the open vistas, the haunting glow of a distant castle. I never wanted it to end. With a runtime of nearly 100 hours, I can rest easy knowing that I can return to this place for the weeks to come.
-
-    Another mind-boggling realization I had about the game was of its many secrets. With every stretch of land you explore, there's likely a hidden dungeon just off the cliff. In every rooftop, there's likely another path below the ledge. The fact that the developers managed to build a world this expansive, with each corner of the world so dense with activity, is nothing short of a human feat.
-
-    Gris
-    by Nomada Studio
-
-    This is a much more accessible mobile game. It's a gorgeous platformer about a mother and daughter. The backgrounds are all hand-illustrated watercolor paintings, and each level comes alive with a different theme and color palette. Pair this with one of the best soundtracks in gaming, playing Gris feels like a calming and meditative journey into loss and acceptance.
-
-    <h2 id="pricing">Pricing</h2>
-    <div class="pricing">
-      <div class="card">
-        <header>
-          <h3>$20</h3>
-        </header>
-        <ul>
-          <li>
-            <header>
-              <h4>"Pretty Cool" package</h4>
-            </header>
-          </li>
-          <li>Your customers will dig it!</li>
-          <li>50 colors and patterns to pick from</li>
-        </ul>
-        <button>Buy $20 Package</button>
-      </div>
-      <div class="card">
-        <header>
-          <h3>$35</h3>
-        </header>
-        <ul>
-          <li>
-            <header>
-              <h4>"Very Cool" package</h4>
-            </header>
-          </li>
-          <li>Your customers will be so hyped for your product!</li>
-          <li>150 colors and patterns to pick from</li>
-        </ul>
-        <button>Buy $35 Package</button>
-      </div>
-      <div class="card">
-        <header>
-          <h3>$50</h3>
-        </header>
-        <ul>
-          <li>
-            <header>
-              <h4>"Ultra Cool" package</h4>
-            </header>
-          </li>
-          <li>You will be setting the trends!</li>
-          <li>500 colors and patterns to pick from</li>
-        </ul>
-        <button>Buy $50 Package</button>
-      </div>
-    </div>
-
-    <h2 id="gallery">Gallery</h2>
-    <div class="gallery">
-      <img id="image1" src="images/sample.jpg" alt="" />
-      <img id="image2" src="images/logo.png" alt="" />
-      <img id="image3" src="images/sample.jpg" alt="" />
-      <img id="image4" src="images/logo.png" alt="" />
-      <img id="image5" src="images/sample.jpg" alt="" />
-    </div>
-  </main>
-
-  <footer>
-    <p>University of Michigan School of Information <br />
-      &copy; Colleen van Lent, Drew Asselin - Web Design 2019-2020</p>
-  </footer>
+        <footer>
+            <p>Toby Darmawan's Notes</p>
+        </footer>
 </body>
 
 </html>

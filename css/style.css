@@ -1,26 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-body{
+
+body {
   margin: 0;
   padding: 0;
-  font-size: 16pt; /* test for this! Make all sizes em or rem */
+  font-size: 16pt;
+  /* test for this! Make all sizes em or rem */
   font-family: 'Poppins', serif;
   background-image: url("../images/concrete_seamless.png");
   background-color: #f1f1f1;
 }
-  
-header{
+
+header {
   background: #fff;
   border-bottom: 3px solid #50C7C7;
-  margin-bottom:20px
+  margin-bottom: 20px
 }
 
-h1{
+h1 {
   font-size: 2em;
   text-align: center;
   line-height: 2;
 }
 
-h2{
+h2 {
   font-size: 1.5em;
   text-align: center;
   padding: 5px;
@@ -30,7 +32,7 @@ p {
   padding: 0 30px;
 }
 
-a.skip{
+a.skip {
   background: white;
   left: 0;
   padding: 6px;
@@ -41,30 +43,27 @@ a.skip{
   z-index: 1;
 }
 
-a.skip:focus{
-  top:20px;
+a.skip:focus {
+  top: 20px;
   color: black;
   text-decoration-style: solid;
 }
 
-*:focus{
+*:focus {
   border: 2px solid black;
 }
 
 
-.nav_item a{
+.nav_item a {
   padding: 10px;
 }
 
-.nav_item a:hover, a:focus{
+.nav_item a:hover,
+a:focus {
   color: #50C7C7;
   text-decoration: underline;
   -webkit-text-decoration-style: dotted;
-          text-decoration-style: dotted;
-}
-
-.pricing{
-  min-height: 475px;
+  text-decoration-style: dotted;
 }
 
 .card {
@@ -74,35 +73,24 @@ a.skip:focus{
   padding: 0 0 25px 0;
 }
 
-.card > ul{
+.card>ul {
   list-style: none;
   padding-left: 5px;
 }
 
-.card > ul li {
+.card>ul li {
   width: 90%;
   margin: 20px auto;
-  
+
 }
 
-.card button{
-  width: 90%;
-  height: 40px;
-  border: 0;
-  margin-left: 5%;
-  border-radius: 7px;
-  background: #288080;
-  color: white;
-  font-size: 1em;
-}
-
-.card h3{
+.card h3 {
   font-size: 4em;
   color: white;
   text-align: center;
 }
 
-footer{
+footer {
   background-color: black;
   color: white;
   padding: 30px;
@@ -111,129 +99,84 @@ footer{
 
 /*CODE START*/
 /* Styling for the default view*/
-@keyframes logoAnimation {
-  0%   {width: 25px; opacity: 0;}
-  100% {width: 475px; opacity: 1;}
-}
-#logo{
-  animation: logoAnimation;
-  animation-duration: 5s;
-}
-header{
+header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.pricing{
+
+.pricing {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: space-around;
-  /* justify-items:stretch; */
 }
-.card{
+
+.card {
   width: 450px;
   flex-grow: 1;
   border-radius: 50px 50px 0 0;
 }
-.card > header
-{
+
+.card>header {
   background: #288088;
   border: solid 2px #45ADAD;
   padding: 20px 0px;
   border-radius: 50px 50px 0 0;
 }
+
 /* Gallery images should be centered and wrapped.*/
-.gallery{
+.gallery {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.gallery img{
-  border: solid 10px #50C7C7;
-  margin: 10px; 
-  width: 300px;
+img {
+  border: solid 3px black;
+  border-radius: 20px;
+  width: 100%;
 }
+
 /* Prevent links from changing colors after being visited.*/
-a, a:visited, a:hover, a:active {
+a,
+a:visited,
+a:hover,
+a:active {
   color: blue;
 }
+
 /* Styling for larger views (900px or larger) */
 @media only screen and (min-width: 900px) {
-  .pricing{
+  .pricing {
     flex-direction: row;
     justify-content: center;
   }
+
   /*Align text content to the left*/
-  .card{
-    justify-content:flex-start;
+  .card {
+    justify-content: flex-start;
     flex-basis: 275px;
   }
+
   /*Style card titles to be on the left.*/
-  .card>header{
+  .card>header {
     flex-direction: row;
     justify-content: flex-start;
   }
+
   /* Make nav links horizontal*/
-  .nav_links{
+  .nav_links {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
   }
+
   /*Make nav bar sticky*/
-  body>header:first-of-type{
-    flex-direction:row;
+  body>header:first-of-type {
+    flex-direction: row;
     justify-content: space-between;
     position: sticky;
     top: 0px;
-  }
-  
-}
-/* Disabling animations when reduce motion is enabled */ 
-@media (prefers-reduced-motion:reduce) {
-  #logo{
-    animation: logoAnimation;
-  }
-}
-/* Styling print portrait view */
-@media print {
-  /* Hide gallery*/
-  .gallery, #gallery{
-    display: none;
-  }
-
-  body{
-    font-family: Arial, Helvetica;
-    background-image: none;
-  }
-  .pricing{
-    flex-direction: row;
-    justify-content: center;
-  }
-  .card{
-    /* Align all cards to baseline */ 
-    align-self:flex-end;
-    border: solid 2px #45ADDD;
-    flex-basis: 325px;
-    /*Use flex shrink to make flex items adapt to screen size*/
-    flex-shrink: 1;
-  }
-  /* Append emoji to the second li of every card's ul */
-  .card>ul>li:nth-child(2)::after{
-    content: "👍";
-  }
-  /* Disable animation in print mode*/ 
-  #logo{
-    animation: logoAnimation;
-  }
-  /*Make all nav links horizontal and spaced evenly*/
-  nav{
-    width: 100%;
-  }
-  .nav_links{
-    display: flex;
-    flex-direction:row;
-    justify-content:space-evenly;
   }
 }
