@@ -1,0 +1,10 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.gallery img {
+  flex-basis: 50px;
+  /* height: auto; */
+}

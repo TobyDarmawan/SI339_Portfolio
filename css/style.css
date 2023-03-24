@@ -1,41 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 body {
   margin: 0;
   padding: 0;
   font-size: 16pt;
-  /* test for this! Make all sizes em or rem */
-  font-family: 'Poppins', serif;
-  background-image: url("../images/concrete_seamless.png");
-  background-color: #f1f1f1;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
 }
 
 header {
   background: #fff;
-  border-bottom: 3px solid #50C7C7;
-  margin-bottom: 20px
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
-  line-height: 2;
 }
 
 h2 {
   font-size: 1.5em;
-  text-align: center;
-  padding: 5px;
+  padding: 30px;
 }
 
 p {
   padding: 0 30px;
+  padding-bottom: 20px;
 }
 
 a.skip {
   background: white;
-  left: 0;
-  padding: 6px;
+  padding: 12px;
   position: absolute;
   top: -40px;
   -webkit-transition: top 1s ease-out;
@@ -49,10 +48,9 @@ a.skip:focus {
   text-decoration-style: solid;
 }
 
-*:focus {
+/* *:focus {
   border: 2px solid black;
-}
-
+} */
 
 .nav_item a {
   padding: 10px;
@@ -66,71 +64,12 @@ a:focus {
   text-decoration-style: dotted;
 }
 
-.card {
-  margin: 12px;
-  background: #fff;
-  border-radius: 7px;
-  padding: 0 0 25px 0;
-}
-
-.card>ul {
-  list-style: none;
-  padding-left: 5px;
-}
-
-.card>ul li {
-  width: 90%;
-  margin: 20px auto;
-
-}
-
-.card h3 {
-  font-size: 4em;
-  color: white;
-  text-align: center;
-}
 
 footer {
   background-color: black;
   color: white;
   padding: 30px;
   text-align: center;
-}
-
-/*CODE START*/
-/* Styling for the default view*/
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.pricing {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: space-around;
-}
-
-.card {
-  width: 450px;
-  flex-grow: 1;
-  border-radius: 50px 50px 0 0;
-}
-
-.card>header {
-  background: #288088;
-  border: solid 2px #45ADAD;
-  padding: 20px 0px;
-  border-radius: 50px 50px 0 0;
-}
-
-/* Gallery images should be centered and wrapped.*/
-.gallery {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 img {
@@ -145,38 +84,4 @@ a:visited,
 a:hover,
 a:active {
   color: blue;
-}
-
-/* Styling for larger views (900px or larger) */
-@media only screen and (min-width: 900px) {
-  .pricing {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  /*Align text content to the left*/
-  .card {
-    justify-content: flex-start;
-    flex-basis: 275px;
-  }
-
-  /*Style card titles to be on the left.*/
-  .card>header {
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-
-  /* Make nav links horizontal*/
-  .nav_links {
-    display: flex;
-    flex-direction: row;
-  }
-
-  /*Make nav bar sticky*/
-  body>header:first-of-type {
-    flex-direction: row;
-    justify-content: space-between;
-    position: sticky;
-    top: 0px;
-  }
 }
