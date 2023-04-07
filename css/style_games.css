@@ -20,3 +20,34 @@ div img:nth-child(even) {
 .game * {
   grid-column: auto / span 1;
 }
+
+@media screen and (max-width: 600px) {
+  .game {
+    grid-template-columns: 100%;
+  }
+
+  .game p:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .game p:nth-child(3) {
+    grid-row: 3;
+  }
+
+  .game p:nth-child(4) {
+    grid-row: 5;
+  }
+
+  /* place dis_img_1, 2 and 3 in the 2nd, 4th and 6th row */
+  .dis_img_1 {
+    grid-row: 4;
+  }
+
+  .dis_img_2 {
+    grid-row: 6;
+  }
+
+  .dis_img_3 {
+    grid-row: 8;
+  }
+}

@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #FCFFE7;
   font-size: 16pt;
 }
 
@@ -10,7 +11,6 @@ ul {
 }
 
 header {
-  background: #fff;
   margin: 20px 0;
   display: flex;
   flex-direction: row;
@@ -36,15 +36,16 @@ a.skip {
   background: white;
   padding: 12px;
   position: absolute;
-  top: -40px;
-  -webkit-transition: top 1s ease-out;
-  transition: top 1s ease-out;
+  top: -60px;
+  -webkit-transition: top 0.5s ease-out;
+  transition: top 0.5s ease-out;
   z-index: 1;
 }
 
 a.skip:focus {
-  top: 20px;
-  color: black;
+  top: 60px;
+  color: #EB455F;
+  background-color: #2B3467;
   text-decoration-style: solid;
 }
 
@@ -54,14 +55,21 @@ a.skip:focus {
 
 .nav_item a {
   padding: 10px;
+  background-color: #BAD7E9;
+  border-radius: 10px;
+  margin: 0 10px;
 }
 
 .nav_item a:hover,
-a:focus {
-  color: #50C7C7;
-  text-decoration: underline;
-  -webkit-text-decoration-style: dotted;
-  text-decoration-style: dotted;
+.focused_nav a {
+  background-color: #2B3467;
+}
+
+.nav_item a,
+.nav_item a:visited,
+.nav_item a:active {
+  color: #EB455F;
+  text-decoration: none;
 }
 
 
@@ -76,12 +84,4 @@ img {
   border: solid 3px black;
   border-radius: 20px;
   width: 100%;
-}
-
-/* Prevent links from changing colors after being visited.*/
-a,
-a:visited,
-a:hover,
-a:active {
-  color: blue;
 }
