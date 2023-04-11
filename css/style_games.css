@@ -4,15 +4,6 @@
   gap: 30px;
 }
 
-/* div p:nth-child(even),
-div img:nth-child(odd) {
-  grid-column: 1/2;
-}
-
-div p:nth-child(odd),
-div img:nth-child(even) {
-  grid-column: 2/-1;
-} */
 h2 {
   margin-top: 30px;
 }
@@ -27,17 +18,11 @@ div:first-of-type>h2:first-of-type {
 
 h2 {
   padding: 0;
-  /* padding-left: 30px; */
-  /* padding-top: 20px; */
 }
 
 .game>h2 {
   grid-column: 1/-1;
 }
-
-/* .game * {
-  grid-column: auto / span 1;
-} */
 
 @media screen and (max-width: 600px) {
   .game {
@@ -56,8 +41,6 @@ h2 {
     grid-row: 6;
   }
 
-
-  /* place dis_img_1, 2 and 3 in the 2nd, 4th and 6th row */
   .dis_img_1 {
     grid-row: 3;
   }
@@ -76,18 +59,6 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  /* 
-  .game p:nth-child(2) {
-    grid-row: 1;
-  }
-
-  .game p:nth-child(3) {
-    grid-row: 3;
-  }
-
-  .game p:nth-child(4) {
-    grid-row: 5;
-  } */
   h2 {
     grid-row: 1;
   }
@@ -97,7 +68,6 @@ h2 {
     grid-row: auto;
   }
 
-  /* place dis_img_1, 2 and 3 in the 2nd, 4th and 6th row */
   img {
     grid-row: 5;
   }

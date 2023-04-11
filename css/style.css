@@ -9,7 +9,7 @@ body {
   margin: 0 30px;
 } */
 header {
-  margin: 20px 0;
+  /* margin: 20px 0; */
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -88,7 +88,7 @@ header {
 }
 
 ul {
-  height: 50px;
+  height: 70px;
   background-color: #FCFFE7;
 }
 
@@ -100,11 +100,11 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .pkm {
   margin: 30px;
-
 }
 
 @media screen and (max-width: 600px) {
@@ -112,7 +112,7 @@ nav {
     height: 180px;
     flex-direction: column;
     justify-content: space-evenly;
-
+    align-items: flex-start;
   }
 }
 

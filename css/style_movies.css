@@ -1,4 +1,4 @@
-.movies {
+/* .movies {
   margin: 30px;
   display: flex;
   flex-direction: column;
@@ -17,12 +17,7 @@
 }
 
 .gallery img {
-  /* flex-basis: 25px; */
   width: 250px;
-
-
-  /* max-width: 100%; */
-  /* height: auto; */
 }
 
 @media screen and (max-width: 600px) {
@@ -39,5 +34,45 @@
 @media screen and (min-width: 601px) and (max-width: 860px) {
   .gallery img {
     width: 350px;
+  }
+} */
+
+
+.movies {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie * {
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 300px;
+}
+
+@media screen and (min-width: 600px) {
+  .gallery {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .gallery img {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .gallery img {
+    width: 250px;
   }
 }
