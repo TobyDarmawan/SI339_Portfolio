@@ -1,15 +1,13 @@
 body {
-  margin: 0;
+  padding-top: 0;
   padding: 0;
   background-color: #FCFFE7;
   font-size: 16pt;
 }
 
-ul {
-  display: flex;
-  flex-direction: row;
-}
-
+/* img {
+  margin: 0 30px;
+} */
 header {
   margin: 20px 0;
   display: flex;
@@ -24,12 +22,7 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  padding: 30px;
-}
-
-p {
-  padding: 0 30px;
-  padding-bottom: 20px;
+  /* padding: 30px; */
 }
 
 a.skip {
@@ -48,10 +41,6 @@ a.skip:focus {
   background-color: #2B3467;
   text-decoration-style: solid;
 }
-
-/* *:focus {
-  border: 2px solid black;
-} */
 
 .nav_item a {
   padding: 10px;
@@ -74,14 +63,63 @@ a.skip:focus {
 
 
 footer {
-  background-color: black;
-  color: white;
+  margin-top: 30px;
+  background-color: #BAD7E9;
   padding: 30px;
   text-align: center;
 }
 
 img {
-  border: solid 3px black;
+  /* border: solid 3px black; */
   border-radius: 20px;
   width: 100%;
+}
+
+/* ul {
+  position: sticky;
+  top: 0px;
+
+} */
+header {
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+}
+
+ul {
+  height: 50px;
+  background-color: #FCFFE7;
+}
+
+nav {
+  width: 100%;
+}
+
+.nav_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pkm {
+  margin: 30px;
+
+}
+
+@media screen and (max-width: 600px) {
+  .nav_links {
+    height: 180px;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 860px) {
+  .nav_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }
