@@ -36,7 +36,8 @@ a.skip {
 }
 
 a.skip:focus {
-  top: 60px;
+  top: 10px;
+  right: 20px;
   color: #EB455F;
   background-color: #2B3467;
   text-decoration-style: solid;
@@ -103,7 +104,7 @@ nav {
   align-items: center;
 }
 
-.pkm {
+main {
   margin: 30px;
 }
 
@@ -122,4 +123,16 @@ nav {
     flex-direction: row;
     justify-content: flex-start;
   }
+}
+
+/* body {
+  min-height: 200vh;
+} */
+
+#progress-tracker {
+  position: fixed;
+  top: 0;
+  height: 4px;
+  background: #2B3467;
+  z-index: 10000;
 }
