@@ -50,18 +50,19 @@ a.skip:focus {
   margin: 0 10px;
 }
 
-.nav_item a:hover,
-.focused_nav a {
-  background-color: #2B3467;
-}
+
 
 .nav_item a,
-.nav_item a:visited,
-.nav_item a:active {
+.nav_item a:visited {
   color: #EB455F;
   text-decoration: none;
 }
 
+.nav_item a:hover,
+.focused_nav a {
+  background-color: #2B3467;
+  text-decoration: underline;
+}
 
 footer {
   margin-top: 30px;
