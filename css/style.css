@@ -46,6 +46,7 @@ a.skip:focus {
 .nav_item a {
   padding: 10px;
   background-color: #BAD7E9;
+  color: #00637e;
   border-radius: 10px;
   margin: 0 10px;
 }
@@ -54,12 +55,13 @@ a.skip:focus {
 
 .nav_item a,
 .nav_item a:visited {
-  color: #EB455F;
   text-decoration: none;
 }
 
 .nav_item a:hover,
 .focused_nav a {
+  color: #e9ccba;
+  /* color: #ff0026; */
   background-color: #2B3467;
   text-decoration: underline;
 }
